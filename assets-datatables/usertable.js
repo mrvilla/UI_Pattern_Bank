@@ -31,28 +31,16 @@ $(document).ready(function() {
         }
     } );
     
-    $.getJSON("data/list.json", successUI);
-    // $.getJSON("data/list.json", function(result){
-    //     $.each(result.uilist, function(i, item) {
-    //         var newUItr = $("<tr class='new_ui_list'>");
-    //         newUItr.append(item.Nr);
-    //         newUItr.append(item.Name);
-    //         newUItr.append(item.From);
-    //         newUItr.append(item.Site);
-    //         newUItr.append(item.Category);
-    //         $("#contentData").append(newUItr);
-    //     });
-    // });
-});
-
-function successUI(result) {
-    $.each(result.uilist, function(i, item) {
-        var newUItr = $("<tr class='new_ui_list'>");
-        newUItr.append(item.Nr);
-        newUItr.append(item.Name);
-        newUItr.append(item.From);
-        newUItr.append(item.Site);
-        newUItr.append(item.Category);
-        $("#contentData").append(newUItr);
+    //$.getJSON("data/list.json", successUI);
+    $.getJSON("data/list.json", function(result){
+        $.each(result.uilist, function(i, item) {
+            var newUItr = $("<tr class='new_ui_list'>");
+            newUItr.append(item.Nr);
+            newUItr.append(item.Name);
+            //newUItr.append(item.From);
+            newUItr.append(item.Site);
+            newUItr.append(item.Category);
+            $("#contentData").append(newUItr);
+        });
     });
-}
+});
