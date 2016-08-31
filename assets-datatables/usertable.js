@@ -1,3 +1,4 @@
+/* global $ */
 $(document).ready(function() {
     var table = $('#d_list').DataTable({
         "columnDefs": [
@@ -8,17 +9,14 @@ $(document).ready(function() {
         "drawCallback": function ( settings ) {
             var api = this.api();
             var rows = api.rows( {page:'current'} ).nodes();
-            var last=null;
+            var last = null;
  
             api.column(2, {page:'current'} ).data().each( function ( group, i ) {
                 if ( last !== group ) {
-                    $(rows).eq( i ).before(
-                        '<tr class="group"><td colspan="5">'+group+'</td></tr>'
-                    );
- 
+                    $(rows).eq( i ).before('<tr class="group"><td colspan="5">'+group+'</td></tr>');
                     last = group;
                 }
-            } );
+            });
         }
     } );
  
@@ -32,4 +30,29 @@ $(document).ready(function() {
             table.order( [ 2, 'asc' ] ).draw();
         }
     } );
-} );
+    
+    $.getJSON("data/list.json", successUI);
+    // $.getJSON("data/list.json", function(result){
+    //     $.each(result.uilist, function(i, item) {
+    //         var newUItr = $("<tr class='new_ui_list'>");
+    //         newUItr.append(item.Nr);
+    //         newUItr.append(item.Name);
+    //         newUItr.append(item.From);
+    //         newUItr.append(item.Site);
+    //         newUItr.append(item.Category);
+    //         $("#contentData").append(newUItr);
+    //     });
+    // });
+});
+
+function successUI(result) {
+    $.each(result.uilist, function(i, item) {
+        var newUItr = $("<tr class='new_ui_list'>");
+        newUItr.append(item.Nr);
+        newUItr.append(item.Name);
+        newUItr.append(item.From);
+        newUItr.append(item.Site);
+        newUItr.append(item.Category);
+        $("#contentData").append(newUItr);
+    });
+}

@@ -1,0 +1,18 @@
+{
+    "uilist" : [
+            {
+          "Nr": "<td>9999</td>",
+          "Name": "<td>checkboxes</td>",
+          "From": "<td>User Interface Elements</td>",
+          "Site": "<td><a href=\"http://1.usa.gov/1QE7AdD\">usability.gov</a></td>",
+          "Category": "<td>Input Controls</td>"
+        },
+        {
+          "Nr": "<td>99999</td>",
+          "Name": "<td>radio buttons</td>",
+          "From": "<td>User Interface Elements</td>",
+          "Site": "<td><a href=\"http://1.usa.gov/1QE7AdD\">usability.gov</a></td>",
+          "Category": "<td>Input Controls</td>"
+        }
+        ]
+}
