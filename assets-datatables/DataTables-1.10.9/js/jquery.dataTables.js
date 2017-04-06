@@ -11521,7 +11521,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Seek Pattern:",
+			"sSearch": "",
 	
 	
 			/**
@@ -11532,7 +11532,7 @@
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.searchPlaceholder
 			 */
-			"sSearchPlaceholder": "",
+			"sSearchPlaceholder": "Search..",
 	
 	
 			/**

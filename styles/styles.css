@@ -1,11 +1,12 @@
 @import "../styles/resets.css";
-@import "../styles/base.css";
-@import "../styles/grid.css";
-@import "../styles/prism.css";
-
+html {
+  background-image: linear-gradient(-45deg, #507b61 0%, #fff 100%);
+  height: 100%;
+}
 h1.font {
   font-family: 'Megrim', cursive, Arial, sans-serif;
   letter-spacing: 1px;
+  margin: 0.625em auto;
 }
 section {
   font-family: 'Ubuntu', sans-serif;
@@ -18,9 +19,12 @@ section {
     float: left;
 }
 .header {
-    padding: 0.376em 1.250em;
-    display: flex;
-    position: relative;
+  display: block;
+  text-align: center;
+}
+.header h4 {
+  font-weight: lighter;
+  margin-bottom: 0.438em;
 }
 h1 {
   font-size: 278%;
@@ -37,33 +41,48 @@ h1 {
     cursor:pointer;
 }
 .tiny {
-  font-size: 38%;
-  border-bottom: 1px solid #000;
+  font-size: 40%;
   position: relative;
   bottom: 15px;
 }
 .dataTables_wrapper .dataTables_filter,
 table.dataTable.no-footer {
-    margin-bottom: 2em;
+    margin-bottom: 1.625em;
 }
 .dataTables_wrapper .dataTables_filter {
   font-size: 160%;
   font-family: 'Megrim', cursive, Arial, sans-serif;
   font-weight: bold;
+  text-align: center;
+  width: 100%;
 }
 .dataTables_wrapper .dataTables_filter input {
   font-family: 'Megrim', cursive, Arial, sans-serif;
   font-weight: bold;
-    margin-left: 0.6em;
-    padding: 3px 5px;
-    border: none;
-    background-image: linear-gradient(90deg, #24d2a0 0%, #fff 85%);
-    font-size: inherit;
+  font-size: 150%;
+  width: 100%;
+  margin-left: 0;
+  padding: 3px 5px;
+  border: none;
+  background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
 }
+::-webkit-input-placeholder {
+  color: #000; 
+}
+:-moz-placeholder {
+   color: #000;  
+}
+::-moz-placeholder {
+   color: #000;  
+}
+:-ms-input-placeholder {  
+   color: #000;  
+}
+
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
     border: none;
     background: none;
-    background-image: linear-gradient(90deg, #24d2a0 0%, #fff 85%);
+    background: #fff;
     border-radius: 0;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
@@ -81,10 +100,10 @@ table.dataTable.no-footer {
     border: none;
 }
 .dataTables_wrapper {
-    padding: 0.376em 1.250em 3em;
+    padding: 0;
 }
 .footer {
-  position: relative;
+  position: absolute;
   padding: 0.625em 1.250em;
   bottom: 0;
 }
@@ -92,7 +111,7 @@ table.dataTable.no-footer {
 tr.group,
 tr.group:hover {
     background-color: #ddd !important;
-    background-image: linear-gradient(90deg, #24d2a0 0%, #fff 80%);
+    background-image: linear-gradient(90deg, #24d2a0 0%, #fff 100%);
 }
 em {
   color: #000;
