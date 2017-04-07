@@ -1,0 +1,222 @@
+.room {
+  margin: 0 auto;
+ 	max-width: 100%; 
+}
+.room:after {
+	content: "";
+	display: table;
+	clear: both; 
+}
+*, *:after, *:before {
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+[class*='box-'] {
+  	float: left;
+  	padding: 0 1.250em;
+}
+[class*='inbox-'] {
+	float: left;
+	padding: 0 0.625em;
+}
+[class*='nest-'] {
+	float: left;
+	padding: 0 0.625em;
+}
+.marrow, .bone, .below, .grnd, .zero, 
+.grnd-zero, .dble-zero, .odd, .free,
+.one, .bath, .beds, .draws, .cubes,
+.sexes, .stars, .frames, .shelves,
+.rug, .table, .window, .odd-0, .free-1,
+.one-2, .bath-2, .beds-3, .draws-4,
+.cubes-5, .sexes-6, .stars-7, .frames-8,
+.shelves-9, .rug-10, .table-11,
+.window-12 {
+	padding: 0.376em 0.5em;
+	opacity: 0.55;
+	font-size: 100%;
+}
+.marrow {
+	background: #666666;
+}
+.bone {
+	background: #838383;
+}
+.below {
+	background: #989898;
+}
+.grnd {
+	background: #B2B2B2;
+}
+.zero {
+	background: #C2C2C2;
+}
+.grnd-zero {
+	background: #cbcbcb;
+}
+.dble-zero {
+	background: #DCDCDC;
+}
+.odd, .odd-0 {
+	background: #EEE960;
+}
+.free, .free-1 {
+	background: #EEAF61;
+}
+.one, .one-1 {
+	background-color: #ee6d60;
+}
+.bath, .bath-2, .nested-bath {
+	background-color: #ff53bb;
+}
+.beds, .beds-3, .beds-n {
+	background-color: #d353f9;
+}
+.draws, .draws-4, .draws-n {
+	background-color: #895bf9;
+}
+.cubes, .cubes-5, .cubes-n {
+	background-color: #5b62f6;
+}
+.sexes, .sexes-6, .sexes-n {
+	background-color: #56b6f8;
+}
+.stars, .stars-7 {
+	background-color: #52edf8;
+}
+.frames, .frames-8 {
+	background-color: #54f6aa;
+}
+.shelves, .shelves-9 {
+	background-color: #59f46a;
+}
+.rug, .rug-10 {
+	background-color: #bfef5d;
+}
+.table, .table-11 {
+	background-color: #fff059;
+}
+.window, .window-12 {
+	background-color: #f79259;
+}
+.box-1 {
+  width: 100%; 
+}
+.inbox-06 {
+	width: 91.77777%;
+}
+.inbox-05 {
+	width: 91%;
+}
+.inbox-04 {
+	width: 90%;
+}
+.inbox-03 {
+	width: 89%;
+}
+.inbox-02 {
+	width: 87.55555%;
+}
+.inbox-01 {
+	width: 85.77777%;
+}
+.inbox-00 {
+	width: 83.33333%;
+}
+.inbox-0 {
+	width:80%;
+}
+.inbox-1 {
+	width: 75%;
+}
+.box-2, .inbox-2 {
+  width: 50%; 
+}
+.box-3, .inbox-3 {
+  width: 33.33333%; 
+}
+.box-4, .inbox-4 {
+  width: 25%;
+}
+.box-2-4 {
+	width: 50%;
+}
+.box-5, .inbox-5 {
+  width: 20%; 
+}
+.box-3-5 {
+	width: 60%;
+}
+.box-6, .inbox-6 {
+  width: 16.66667%; 
+}
+.box-4-6 {
+	width: 66.66666%;
+}
+.box-7, .inbox-7 {
+  width: 14.28571%; 
+}
+.box-5-7 {
+	width: 71.4%;
+}
+.inbox-7-8 {
+	width: 14.22222%;
+}
+.box-8, .inbox-8 {
+  width: 12.5%; 
+}
+.box-6-8 {
+	width: 75%;
+}
+.box-9, .inbox-9 {
+  width: 11.11111%; 
+}
+.inbox-8-9 {
+	width: 12.33333%;
+}
+.box-7-9 {
+	width: 77.777%;
+}
+.inbox-9-10 {
+	width: 10.99999%;
+}
+.box-10, .inbox-10 {
+  width: 10%;
+}
+.box-8-10 {
+	width: 80%;
+}
+.box-11, .inbox-11 {
+  width: 9.09091%; 
+}
+.box-9-11 {
+	width: 81.8%;
+}
+.inbox-11-12 {
+	width: 9%;
+}
+.box-12, .inbox-12 {
+  width: 8.33333%; 
+}
+.box-10-12 {
+	width: 83.33333%;
+}
+.inbox-12-12 {
+	width: 8.222222%;
+}
+/*==========================INNER BOX*/
+.marrow, .bone, .below, .grnd, .zero,
+.grnd-zero, .dble-zero, .odd-0, .free-1,
+.one-1, .bath-2, .beds-3, .draws-4,
+.cubes-5, .sexes-6, .stars-7, .frames-8,
+.shelves-9, .rug-10, .table-11, .window-12,
+.beds-n, .draws-n, .cubes-n, .sexes-n {
+	height: 28px;
+}
+.inner {
+	background: #ffffff;
+	padding: 0 0.5em;
+	opacity: 0.75;
+	font-size: 90%;
+}
