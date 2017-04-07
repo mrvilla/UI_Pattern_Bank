@@ -83,21 +83,36 @@ table.dataTable.no-footer {
     border: none;
     background: none;
     background: #fff;
-    border-radius: 0;
+    border-radius: 50%;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.3em 0.5em;
+    border-radius: 50%;
+    border: none;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
     color: #333 !important;
     border: none;
     text-decoration: underline;
-    background-color: #24d2a0;
-    background: #24d2a0;
-    border-radius: 0;
+    background-color: #507b61;
+    background: #507b61;
+    border-radius: 50%;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button {
-    padding: 0.3em 1em 0.3em 0.5em;
-    border-radius: 0;
-    min-width: 1.5em;
-    border: none;
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  border: 0;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+  margin: 0;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover {
+  color: #333 !important;
+  border: 0;
+  text-decoration: underline;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: transparent;
+  background: transparent;
 }
 .dataTables_wrapper {
     padding: 0;
